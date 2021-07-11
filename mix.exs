@@ -37,6 +37,7 @@ defmodule Hausgedacht.MixProject do
       {:floki, ">= 0.30.0", only: :test},
       {:gettext, "~> 0.11"},
       {:jason, "~> 1.0"},
+      {:mix_test_watch, "~> 1.0", only: :dev, runtime: false},
       {:phoenix_ecto, "~> 4.1"},
       {:phoenix_html, "~> 2.11"},
       {:phoenix_live_dashboard, "~> 0.4"},
