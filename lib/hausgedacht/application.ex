@@ -14,9 +14,10 @@ defmodule Hausgedacht.Application do
       # Start the PubSub system
       {Phoenix.PubSub, name: Hausgedacht.PubSub},
       # Start the Endpoint (http/https)
-      HausgedachtWeb.Endpoint
+      HausgedachtWeb.Endpoint,
       # Start a worker by calling: Hausgedacht.Worker.start_link(arg)
       # {Hausgedacht.Worker, arg}
+      HausgedachtWeb.Presence
     ]
 
     # See https://hexdocs.pm/elixir/Supervisor.html
